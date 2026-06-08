@@ -2,6 +2,7 @@ import { Phone } from 'lucide-react'
 import favourImg from '../assets/images/favour.jpeg'
 import victoriaImg from '../assets/images/victoria.jpeg'
 import joshuaImg from '../assets/images/joshua.jpeg'
+import adeyemiImg from '../assets/images/adeyemi.jpeg'
 
 interface TeamMember {
   name: string
@@ -29,6 +30,7 @@ const team: TeamMember[] = [
     bio: 'Leads talent acquisition, employee development, and organisational culture — ensuring Kurios Sat attracts and retains the best minds in technology.',
     initials: 'AA',
     color: '#6DB32F',
+    image: adeyemiImg,
   },
   {
     name: 'Miss Victoria Omodogbe',
@@ -49,7 +51,7 @@ const team: TeamMember[] = [
     image: favourImg,
   },
   {
-    name: 'Joshua Ogiriosa',
+    name: 'Mr. Joshua Ogiriosa',
     role: 'Full Stack Developer',
     phone: '+234 907 605 2317',
     bio: 'Skilled full-stack developer creating robust and scalable web applications, bridging frontend and backend technologies to deliver comprehensive solutions.',
