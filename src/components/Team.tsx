@@ -1,5 +1,6 @@
 import { Phone } from 'lucide-react'
 import favourImg from '../assets/images/favour.jpeg'
+import victoriaImg from '../assets/images/victoria.jpeg'
 
 interface TeamMember {
   name: string
@@ -35,6 +36,7 @@ const team: TeamMember[] = [
     bio: 'Supports HR operations, onboarding, and staff welfare to ensure a productive and positive work environment across all teams.',
     initials: 'VO',
     color: '#2E6A0A',
+    image: victoriaImg,
   },
   {
     name: 'Miss Favour Ikhioya',
