@@ -1,4 +1,5 @@
 import { Phone } from 'lucide-react'
+import favourImg from '../assets/images/favour.jpeg'
 
 interface TeamMember {
   name: string
@@ -7,6 +8,7 @@ interface TeamMember {
   bio: string
   initials: string
   color: string
+  image?: string
 }
 
 const team: TeamMember[] = [
@@ -41,6 +43,7 @@ const team: TeamMember[] = [
     bio: 'Oversees departmental operations, drives excellence across service delivery, and ensures every client and student receives outstanding results.',
     initials: 'FI',
     color: '#1a2f52',
+    image: favourImg,
   },
 ]
 
@@ -55,8 +58,28 @@ export default function Team() {
         <div className="team-grid">
           {team.map((member) => (
             <div key={member.name} className="team-card">
-              <div className="team-avatar" style={{ background: member.color }}>
-                {member.initials}
+              <div
+                className="team-avatar"
+                style={member.image ? {} : { background: member.color }}
+              >
+                {member.image ? (
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="team-avatar-img"
+                    onError={(e) => {
+                      const target = e.currentTarget
+                      target.style.display = 'none'
+                      const parent = target.parentElement
+                      if (parent) {
+                        parent.style.background = member.color
+                        parent.textContent = member.initials
+                      }
+                    }}
+                  />
+                ) : (
+                  member.initials
+                )}
               </div>
               <div className="team-info">
                 <h3 className="team-name">{member.name}</h3>
