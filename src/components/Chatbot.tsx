@@ -126,22 +126,24 @@ Available courses:\n
   }
 
   // Services (tech, AI, software)
-  if (/service|offer|what do you do|software|web dev|app|ai|automat|develop|partner|spectranet|startimes|morplex/.test(msg)) {
+  if (/service|offer|what do you do|software|web dev|app|ai|automat|develop|partner|spectranet|startimes|morplex|whatsapp/.test(msg)) {
     return `💼 Kurios Sat offers four core service areas:\n
 1. Technology Solutions — Web & mobile development, cloud infrastructure, IT consulting
 2. Software Product Development — Enterprise software, CRM/ERP, SaaS platforms
-3. AI & Automation — AI chatbots, business process automation, analytics
+3. AI & Automation — AI chatbots, WhatsApp automation & bots, business process automation, analytics
 4. Corporate Training — Professional courses in tech, cybersecurity, AI, and more\n
 🤝 We also partner with Spectranet (ISP), StarTimes & Morplex TV (cable television).\n
 Visit our Services page for full details!`
   }
 
   // Contact
-  if (/contact|reach|call|phone|email|whatsapp|message/.test(msg)) {
+  if (/contact|reach|call|phone|email|whatsapp|message|facebook|instagram|social/.test(msg)) {
     return `📞 You can reach us through:\n
 • Phone: +234 817 002 0431
-• Phone: +234 806 088 6447
-• Email: info@kurios-sat.com\n
+• Phone / WhatsApp: +234 806 088 6447
+• Email: info@kurios-sat.com
+• Facebook: facebook.com/profile.php?id=61583783820677
+• Instagram: @kurios_sat\n
 Or visit the Contact page to send us a message directly!`
   }
 

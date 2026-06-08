@@ -34,10 +34,12 @@ export default function Services() {
       title: 'AI & Automation Services',
       items: [
         'Intelligent AI Chatbots',
+        'WhatsApp Automation & Bots',
         'Customer Support Automation',
         'Business Process Automation',
         'AI-Powered Analytics & Insights',
-        'Smart Workflow Systems'
+        'Smart Workflow Systems',
+        'AI Content & Lead Generation'
       ]
     },
     {
