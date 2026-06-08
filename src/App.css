@@ -798,6 +798,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.55rem 1.1rem;
+  text-decoration: none;
   background: var(--white);
   border: 1.5px solid var(--gray-200);
   border-radius: 10px;

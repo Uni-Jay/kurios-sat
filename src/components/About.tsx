@@ -83,8 +83,8 @@ export default function About() {
           <div className="about-partners">
             <p className="about-partners-label">Our Partners</p>
             <div className="about-partners-row">
-              <div className="partner-badge">🌐 Spectranet</div>
-              <div className="partner-badge">📺 StarTimes</div>
+              <a className="partner-badge" href="https://spectranet.com.ng/" target="_blank" rel="noreferrer">🌐 Spectranet</a>
+              <a className="partner-badge" href="https://www.startimestv.com/" target="_blank" rel="noreferrer">📺 StarTimes</a>
               <div className="partner-badge">📡 Morplex TV</div>
             </div>
           </div>
