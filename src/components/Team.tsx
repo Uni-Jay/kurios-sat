@@ -1,6 +1,7 @@
 import { Phone } from 'lucide-react'
 import favourImg from '../assets/images/favour.jpeg'
 import victoriaImg from '../assets/images/victoria.jpeg'
+import joshuaImg from '../assets/images/joshua.jpeg'
 
 interface TeamMember {
   name: string
@@ -46,6 +47,15 @@ const team: TeamMember[] = [
     initials: 'FI',
     color: '#1a2f52',
     image: favourImg,
+  },
+  {
+    name: 'Joshua Ogiriosa',
+    role: 'Full Stack Developer',
+    phone: '+234 907 605 2317',
+    bio: 'Skilled full-stack developer creating robust and scalable web applications, bridging frontend and backend technologies to deliver comprehensive solutions.',
+    initials: 'JO',
+    color: '#6FB02F',
+    image: joshuaImg,
   },
 ]
 
