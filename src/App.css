@@ -1676,41 +1676,366 @@
   animation-delay: 200ms;
 }
 
-/* RESPONSIVE ADJUSTMENTS */
+/* =============================================
+   GLOBAL RESPONSIVE — all sections
+   ============================================= */
+
+/* ── 1280px: constrain wide containers ── */
+@media (max-width: 1280px) {
+  .hero-content,
+  .services-container,
+  .about-container,
+  .team-container,
+  .contact-container,
+  .footer-container,
+  .testimonials-container {
+    padding: 0 1.8rem;
+  }
+}
+
+/* ── 1024px: drop two-column layouts ── */
 @media (max-width: 1024px) {
   .hero-content {
     grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-button {
+    display: inline-flex;
   }
 
   .about-container {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: static;
+  }
+
+  .stat {
+    flex: 1 1 140px;
   }
 
   .contact-content {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .testimonial-track {
+    grid-template-columns: 1fr 1.1fr 1fr;
+    gap: 1rem;
   }
 }
 
-@media (max-width: 768px) {
-  .header-container {
-    padding: 0 1.5rem;
+/* ── 900px: nav collapses, tighter grids ── */
+@media (max-width: 900px) {
+  .hero {
+    padding: 5rem 0 3.5rem;
+    min-height: auto;
   }
 
+  .hero-visual {
+    height: 220px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .testimonial-track {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card.side {
+    display: none;
+  }
+
+  .testimonial-card.center {
+    transform: none;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* ── 768px: single column everything ── */
+@media (max-width: 768px) {
+  /* global */
+  h1 { font-size: clamp(1.75rem, 8vw, 2.6rem); }
+  h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
+
+  /* hero */
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .hero-content {
+    padding: 0 1.2rem;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  /* services */
   .services {
     padding: 4rem 0;
   }
 
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .service-card {
+    padding: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+
+  /* about */
   .about {
     padding: 4rem 0;
   }
 
+  .about-container {
+    padding: 0 1.2rem;
+    gap: 2rem;
+  }
+
+  .about-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .stat {
+    flex: 1 1 120px;
+    padding: 1.2rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .about-focuses {
+    gap: 0.4rem;
+  }
+
+  .about-focus-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.7rem;
+  }
+
+  .about-mission {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .about-training-banner {
+    padding: 1.2rem 1.3rem;
+  }
+
+  /* team */
+  .team {
+    padding: 4rem 0;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .team-card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  /* testimonials */
+  .testimonials {
+    padding: 4rem 0;
+  }
+
+  .testimonials-container {
+    padding: 0 1.2rem;
+  }
+
+  .testimonial-filters {
+    gap: 0.4rem;
+  }
+
+  .filter-tab {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.9rem;
+  }
+
+  .testimonial-carousel {
+    gap: 0.5rem;
+  }
+
+  .carousel-arrow {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.88rem;
+  }
+
+  /* contact */
   .contact {
     padding: 4rem 0;
+  }
+
+  .contact-container {
+    padding: 0 1.2rem;
+  }
+
+  .contact-content {
+    gap: 2rem;
+  }
+
+  .info-block {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  /* footer */
+  .footer {
+    padding: 3rem 0 1rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+    gap: 0.6rem;
+  }
+
+  /* chatbot */
+  .chatbot-window {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-height: 88dvh;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .chatbot-fab {
+    bottom: 1.2rem;
+    right: 1.2rem;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+/* ── 520px: tightest phones ── */
+@media (max-width: 520px) {
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  .services-container,
+  .about-container,
+  .team-container,
+  .testimonials-container,
+  .contact-container,
+  .footer-container {
+    padding: 0 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
+
+  .services-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    flex-direction: column;
+  }
+
+  .stat {
+    flex: 1 1 auto;
+  }
+
+  .partner-badge {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  .filter-tab {
+    font-size: 0.74rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .team-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .team-avatar {
+    width: 64px;
+    height: 64px;
+    font-size: 1.2rem;
   }
 }
 
