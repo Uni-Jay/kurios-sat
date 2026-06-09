@@ -2432,4 +2432,9 @@
     bottom: 1.25rem;
     right: 1.25rem;
   }
+
+  /* Hide FAB when chat is open — header already has a close button */
+  .chatbot-fab.open {
+    display: none;
+  }
 }
