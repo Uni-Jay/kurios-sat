@@ -36,7 +36,7 @@ const team: TeamMember[] = [
     name: 'Miss Victoria Omodogbe',
     role: 'Head of Administration',
     phone: '+234 809 667 3814',
-    bio: 'Supports HR operations, onboarding, and staff welfare to ensure a productive and positive work environment across all teams.',
+    bio: 'Supports the CEO in strategic planning, oversees administrative operations, and ensures smooth coordination across departments to drive organisational success.',
     initials: 'VO',
     color: '#2E6A0A',
     image: victoriaImg,
