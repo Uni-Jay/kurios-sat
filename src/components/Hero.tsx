@@ -1,10 +1,20 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import heroVideo from '../assets/video/kuriosvideo.mp4'
 
 
 export default function Hero() {
   return (
     <section className="hero">
+      <video
+        className="hero-video"
+        src={heroVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <div className="hero-overlay"></div>
       <div className="hero-content">
         <div className="hero-text">
           <h1>Transform Your Business with <span>Intelligent Technology</span></h1>
@@ -12,11 +22,6 @@ export default function Hero() {
           <Link to="/services" className="cta-button">
             Explore Our Services <ArrowRight size={20} />
           </Link>
-        </div>
-        <div className="hero-visual">
-          <div className="accent-shape accent-1"></div>
-          <div className="accent-shape accent-2"></div>
-          <div className="accent-shape accent-3"></div>
         </div>
       </div>
     </section>

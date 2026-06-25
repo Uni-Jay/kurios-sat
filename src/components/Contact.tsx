@@ -71,14 +71,14 @@ export default function Contact() {
               </div>
               <div>
                 <h4>Email Us</h4>
-                <p><a href="mailto:kurios.sat@gmail.com">info@kurios-sat.com</a></p>
+                <p><a href="mailto:info@kurios-sat.tech">info@kurios-sat.tech</a></p>
               </div>
             </div>
           </div>
 
           <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
             {/* Hidden field — EmailJS template uses {{to_email}} to deliver to your inbox */}
-            <input type="hidden" name="to_email" value="kurios.sat@gmail.com" />
+            <input type="hidden" name="to_email" value="info@kurios-sat.tech" />
             <div className="form-group">
               <label htmlFor="name">Full Name</label>
               <input

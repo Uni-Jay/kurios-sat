@@ -32,7 +32,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/kurios_sat/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <InstagramIcon />
               </a>
-              <a href="mailto:kurios.sat@gmail.com" aria-label="Email">
+              <a href="mailto:info@kurios-sat.tech" aria-label="Email">
                 <Mail size={18} />
               </a>
             </div>
@@ -63,7 +63,7 @@ export default function Footer() {
             <p><a href="tel:+2348170020431">+234 817 002 0431</a></p>
             <p><a href="tel:+2348060886447">+234 806 088 6447</a></p>
             <p><strong>Email:</strong></p>
-            <p><a href="mailto:kurios.sat@gmail.com">info@kurios-sat.com</a></p>
+            <p><a href="mailto:info@kurios-sat.tech">info@kurios-sat.tech</a></p>
           </div>
         </div>
 

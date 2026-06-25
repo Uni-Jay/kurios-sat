@@ -26,12 +26,12 @@ function getBotReply(input: string): string {
 
   // Hours / opening times
   if (/hour|open|clos|time|when|schedule|available/.test(msg)) {
-    return '🕗 We are open:\n\nMonday \u2013 Friday: 8:00 AM \u2013 5:00 PM\n\nWe are closed on weekends and public holidays. Feel free to send us an email at info@kurios-sat.com and we\'ll respond promptly!'
+    return '🕗 We are open:\n\nMonday \u2013 Friday: 8:00 AM \u2013 5:00 PM\n\nWe are closed on weekends and public holidays. Feel free to send us an email at info@kurios-sat.tech and we\'ll respond promptly!'
   }
 
   // Development / project pricing — varies, contact us
   if (/website|web site|web app|android|ios|software app|saas|platform|build me|develop.*for|create.*app|make.*app|ai system|ai solution|automat|crm|erp/.test(msg)) {
-    return `💻 Great choice! For custom development projects — websites, mobile apps, AI systems, software platforms and more — pricing varies depending on your requirements, scope, and timeline.\n\nPlease reach out to us directly for a quote:\n\n📞 +234 817 002 0431\n📞 +234 806 088 6447\n📧 info@kurios-sat.com\n\nOr visit our Contact page and send us a message — we\'ll get back to you promptly!`
+    return `💻 Great choice! For custom development projects — websites, mobile apps, AI systems, software platforms and more — pricing varies depending on your requirements, scope, and timeline.\n\nPlease reach out to us directly for a quote:\n\n📞 +234 817 002 0431\n📞 +234 806 088 6447\n📧 info@kurios-sat.tech\n\nOr visit our Contact page and send us a message — we\'ll get back to you promptly!`
   }
 
   // ── INDIVIDUAL COURSE CURRICULA ──────────────────────────────
@@ -141,7 +141,7 @@ Visit our Services page for full details!`
     return `📞 You can reach us through:\n
 • Phone: +234 817 002 0431
 • Phone / WhatsApp: +234 806 088 6447
-• Email: info@kurios-sat.com
+• Email: info@kurios-sat.tech
 • Facebook: facebook.com/profile.php?id=61583783820677
 • Instagram: @kurios_sat\n
 Or visit the Contact page to send us a message directly!`
