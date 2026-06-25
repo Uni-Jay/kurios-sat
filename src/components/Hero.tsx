@@ -1,12 +1,37 @@
+import { useEffect, useRef } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import heroVideo from '../assets/video/kuriosvideo.mp4'
 
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    const unmute = () => {
+      const video = videoRef.current
+      if (video) {
+        video.muted = false
+        video.play().catch(() => {})
+      }
+      window.removeEventListener('pointerdown', unmute)
+      window.removeEventListener('keydown', unmute)
+      window.removeEventListener('scroll', unmute)
+    }
+    window.addEventListener('pointerdown', unmute)
+    window.addEventListener('keydown', unmute)
+    window.addEventListener('scroll', unmute)
+    return () => {
+      window.removeEventListener('pointerdown', unmute)
+      window.removeEventListener('keydown', unmute)
+      window.removeEventListener('scroll', unmute)
+    }
+  }, [])
+
   return (
     <section className="hero">
       <video
+        ref={videoRef}
         className="hero-video"
         src={heroVideo}
         autoPlay
