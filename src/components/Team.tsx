@@ -3,6 +3,7 @@ import favourImg from '../assets/images/favour.jpeg'
 import victoriaImg from '../assets/images/victoria.jpeg'
 import joshuaImg from '../assets/images/joshua.jpeg'
 import adeyemiImg from '../assets/images/adeyemi.jpeg'
+import ademolaImg from '../assets/images/ademola.jpeg'
 
 interface TeamMember {
   name: string
@@ -22,6 +23,7 @@ const team: TeamMember[] = [
     bio: 'Visionary leader driving Kurios Sat\'s mission to empower businesses and individuals through innovative technology solutions and strategic digital transformation.',
     initials: 'AA',
     color: '#0F1E38',
+    image: ademolaImg,
   },
   {
     name: 'Mrs. Adeyemi Adenusi',
