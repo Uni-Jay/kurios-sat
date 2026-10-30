@@ -36,6 +36,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
             <li><NavLink to="/services" onClick={close}>Services</NavLink></li>
             <li><NavLink to="/team" onClick={close}>Our Team</NavLink></li>
             <li><NavLink to="/careers" onClick={close}>Careers</NavLink></li>
+            <li><NavLink to="/book" onClick={close}>Book a Call</NavLink></li>
             <li>
               <NavLink to="/contact" onClick={close} className="nav-cta">
                 Contact Us

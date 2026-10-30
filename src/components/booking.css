@@ -1,0 +1,31 @@
+/* Consultation booking (powered by MaxHub). Uses the same tokens as careers.css. */
+.mx-book { box-sizing: border-box; width: 100%; --mx-accent: var(--brand-accent, #1d3a8f); --mx-ink: #1f2430; --mx-muted: #5d6475; --mx-line: rgba(20, 24, 40, 0.12); max-width: 760px; margin: 0 auto; padding: 2.5rem 0 4rem; color: var(--mx-ink); }
+.mx-book .mx-head { text-align: center; margin-bottom: 1.8rem; }
+.mx-book .mx-head h1 { margin: 0.4rem 0 0.6rem; }
+.mx-book .mx-head p { margin: 0 auto; max-width: 58ch; color: var(--mx-muted); line-height: 1.65; }
+.mx-book .mx-eyebrow { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mx-accent) !important; }
+/* Grid/flex children must be allowed to shrink so the day row scrolls instead of widening the page. */
+.mx-book-form > *, .mx-book-form label, .mx-book .mx-row > * { min-width: 0; }
+.mx-book-card { min-width: 0; overflow: hidden; background: #fff; border: 1px solid var(--mx-line); border-radius: 20px; padding: 1.8rem; box-shadow: 0 14px 40px rgba(20, 24, 40, 0.08); }
+.mx-book-form { margin-top: 0; border-top: 0; padding-top: 0; gap: 1rem; display: grid; }
+.mx-book-form label { display: grid; gap: 0.35rem; font-size: 0.85rem; font-weight: 600; color: var(--mx-ink); }
+.mx-book-form input, .mx-book-form textarea, .mx-book-form select { font: inherit; font-weight: 400; padding: 0.7rem 0.85rem; border: 1px solid var(--mx-line); border-radius: 10px; background: #fff; color: var(--mx-ink); width: 100%; box-sizing: border-box; }
+.mx-book-form input:focus, .mx-book-form textarea:focus, .mx-book-form select:focus { outline: 2px solid color-mix(in srgb, var(--mx-accent) 35%, transparent); border-color: var(--mx-accent); }
+.mx-book .mx-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+.mx-label { margin: 0 0 0.5rem; font-size: 0.85rem; font-weight: 700; color: var(--mx-ink); }
+.mx-hint { margin: -0.4rem 0 0; font-size: 0.82rem; color: var(--mx-muted); }
+.mx-muted-c { text-align: center; color: var(--mx-muted); padding: 1.5rem 0; }
+.mx-days { display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 0.3rem; }
+.mx-times { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 0.5rem; }
+.mx-chip { flex-shrink: 0; font: inherit; font-size: 0.88rem; font-weight: 600; padding: 0.55rem 0.8rem; border-radius: 12px; border: 1px solid var(--mx-line); background: #f7f8fa; color: var(--mx-ink); cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+.mx-chip:hover { border-color: var(--mx-accent); }
+.mx-chip.on { background: var(--mx-accent); border-color: var(--mx-accent); color: #fff; }
+.mx-book .mx-btn { background: var(--mx-accent); color: #fff; border: 0; border-radius: 999px; padding: 0.7rem 1.3rem; font-weight: 700; font-size: 0.92rem; cursor: pointer; font-family: inherit; display: inline-block; }
+.mx-book .mx-btn:hover { filter: brightness(1.08); }
+.mx-book .mx-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.mx-book .mx-wide { width: 100%; padding: 0.9rem; }
+.mx-book .mx-btn-outline { background: transparent; color: var(--mx-accent); border: 2px solid var(--mx-accent); }
+.mx-book .mx-error { color: #b42318; background: #fef3f2; border-radius: 10px; padding: 0.6rem 0.8rem; margin: 0; font-size: 0.9rem; }
+.mx-book .mx-sent { background: #ecfdf3; color: #05603a; border-radius: 14px; padding: 1.2rem 1.3rem; }
+.mx-book .mx-sent p { margin: 0.4rem 0 0; }
+@media (max-width: 640px) { .mx-book .mx-row { grid-template-columns: 1fr; } .mx-book-card { padding: 1.2rem; } }
